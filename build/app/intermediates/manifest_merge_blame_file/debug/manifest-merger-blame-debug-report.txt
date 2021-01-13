@@ -1,0 +1,116 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.diushaliev.loook"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:8:5-66
+14-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[:connectivity] C:\Flutter projects\loook\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+15-->[:connectivity] C:\Flutter projects\loook\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+16
+17    <application
+17-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:9:5-48:19
+18        android:name="io.flutter.app.FlutterApplication"
+18-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:10:9-57
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\Администратор\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/launcher_icon"
+21-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:12:9-45
+22        android:label="Loook" >
+22-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:11:9-30
+23        <activity
+23-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:13:9-42:20
+24            android:name="com.example.loook.MainActivity"
+24-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:14:13-41
+25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+25-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:17:13-163
+26            android:hardwareAccelerated="true"
+26-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:19:13-47
+27            android:launchMode="singleTop"
+27-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:15:13-43
+28            android:screenOrientation="portrait"
+28-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:18:13-49
+29            android:theme="@style/LaunchTheme"
+29-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:16:13-47
+30            android:windowSoftInputMode="adjustResize" >
+30-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:20:13-55
+31
+32            <!--
+33                 Specifies an Android theme to apply to this Activity as soon as
+34                 the Android process has started. This theme is visible to the user
+35                 while the Flutter UI initializes. After that, this theme continues
+36                 to determine the Window background behind the Flutter UI.
+37            -->
+38            <meta-data
+38-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:25:13-28:17
+39                android:name="io.flutter.embedding.android.NormalTheme"
+39-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:26:15-70
+40                android:resource="@style/NormalTheme" />
+40-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:27:15-52
+41            <!--
+42                 Displays an Android View that continues showing the launch screen
+43                 Drawable until Flutter paints its first frame, then this splash
+44                 screen fades out. A splash screen is useful to avoid any visual
+45                 gap between the end of Android's launch screen and the painting of
+46                 Flutter's first frame.
+47            -->
+48            <meta-data
+48-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:34:13-37:17
+49                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+49-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:35:15-79
+50                android:resource="@drawable/launch_background" />
+50-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:36:15-61
+51
+52            <intent-filter>
+52-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:38:13-41:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:39:17-68
+53-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:39:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:40:17-76
+55-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:40:27-74
+56            </intent-filter>
+57        </activity>
+58        <!--
+59             Don't delete the meta-data below.
+60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+61        -->
+62        <meta-data
+62-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:45:9-47:33
+63            android:name="flutterEmbedding"
+63-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:46:13-44
+64            android:value="2" />
+64-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:47:13-30
+65
+66        <provider
+66-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
+67            android:name="androidx.core.content.FileProvider"
+67-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
+68            android:authorities="com.diushaliev.loook.fileprovider"
+68-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
+69            android:exported="false"
+69-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
+70            android:grantUriPermissions="true" >
+70-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
+71            <meta-data
+71-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:53
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
+73                android:resource="@xml/filepaths" />
+73-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-50
+74        </provider>
+75    </application>
+76
+77</manifest>
