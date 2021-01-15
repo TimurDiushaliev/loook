@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:loook/connectionFalse.dart';
 import 'package:http/http.dart' as http;
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MaterialApp(home: WebViewPage()));
 
@@ -22,6 +23,18 @@ check(context) async {
         MaterialPageRoute(builder: (context) => ConnectionFailedPage()));
   }
 }
+
+_launchURL(url) async {
+  if (await canLaunch(url)) {
+    flutterWebViewPlugin.stopLoading();
+    await launch(url);
+    print('tel url = $url');
+  } else {
+    print('cant launch url $url');
+  }
+}
+
+final flutterWebViewPlugin = FlutterWebviewPlugin();
 
 checkNetwork(context) async {
   String url = 'https://jsonplaceholder.typicode.com/posts/1';
@@ -44,6 +57,9 @@ class WebViewPage extends StatefulWidget {
 
 class _WebViewPageState extends State<WebViewPage> {
   StreamSubscription<ConnectivityResult> networkSubscription;
+  StreamSubscription<String> _onUrlChanged;
+  final _history = [];
+  String phone = '';
   @override
   void initState() {
     super.initState();
@@ -59,6 +75,20 @@ class _WebViewPageState extends State<WebViewPage> {
       check(context);
     });
     checkNetwork(context);
+    _onUrlChanged = flutterWebViewPlugin.onUrlChanged.listen((String url) {
+      if (mounted) {
+        setState(() {
+          _history.add(url);
+          print('_history $_history');
+        });
+        if (url.contains('tel')) {
+          flutterWebViewPlugin.stopLoading();
+          print('tel $url');
+          _launchURL(url);
+          _history.clear();
+        }
+      }
+    });
   }
 
   @override
@@ -67,6 +97,8 @@ class _WebViewPageState extends State<WebViewPage> {
       //this is our website
       url: 'https://loook.kg',
       withLocalStorage: true,
+      withJavascript: true,
+      withLocalUrl: true,
       initialChild: Scaffold(
         body: Image.asset(
           'images/welcome.png',
