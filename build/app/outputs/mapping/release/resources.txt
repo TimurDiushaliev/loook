@@ -36,6 +36,7 @@ Referenced Strings:
   ACTION_SELECT
   ACTION_SET_SELECTION
   ACTION_UNKNOWN
+  ACTIVITY_NOT_FOUND
   ACTVAutoSizeHelper
   ADD
   ALERT
@@ -178,6 +179,7 @@ Referenced Strings:
   MenuItemImpl
   MenuItemWrapper
   MenuPopupWindow
+  MethodCallHandlerImpl
   MissingPermission
   MissingSuperCall
   MouseCursorChannel
@@ -185,6 +187,7 @@ Referenced Strings:
   NAME
   NAMES_ROUTE
   NONE
+  NO_ACTIVITY
   NO_TARGET
   NULL
   NUMBER
@@ -192,6 +195,7 @@ Referenced Strings:
   NavigationChannel
   NestedScrollView
   NewApi
+  OK
   ON_ANY
   ON_CREATE
   ON_DESTROY
@@ -327,6 +331,7 @@ Referenced Strings:
   URL
   UTF8
   UnknownNullness
+  UrlLauncherPlugin
   V:
   VISIBLE_PASSWORD
   VdcInflateDelegate
@@ -383,6 +388,7 @@ Referenced Strings:
   android.intent.action.TIMEZONE_CHANGED
   android.intent.action.TIME_SET
   android.intent.action.TIME_TICK
+  android.intent.action.VIEW
   android.intent.category.OPENABLE
   android.intent.extra.ALLOW_MULTIPLE
   android.intent.extra.INITIAL_INTENTS
@@ -477,6 +483,7 @@ Referenced Strings:
   calling_package
   canGoBack
   canGoForward
+  canLaunch
   cancel
   cell
   centerColor
@@ -496,8 +503,10 @@ Referenced Strings:
   click
   clipboard
   close
+  closeWebView
   code
   codePoint
+  com.android.browser.headers
   com.android.internal.view.menu.MenuBu...
   com.flutter_webview_plugin.FlutterWeb...
   composingBase
@@ -544,6 +553,8 @@ Referenced Strings:
   editingValue
   email
   emailAddress
+  enableDomStorage
+  enableJavaScript
   enableSuggestions
   enable_state_restoration
   enabled
@@ -748,6 +759,7 @@ Referenced Strings:
   plugins
   plugins.flutter.io/connectivity
   plugins.flutter.io/connectivity_status
+  plugins.flutter.io/url_launcher
   popRoute
   postalAddress
   postalAddressExtended
@@ -888,6 +900,7 @@ Referenced Strings:
   unknown
   updateViewLayout
   url
+  useWebView
   useWideViewPort
   userAgent
   user_query
@@ -2232,24 +2245,24 @@ attr:actionBarDivider:2130837504,
    attr:android_background:-1,
    attr:android_inflatedId:-1,
    attr:android_borderlessButtonStyle:-1
-Skipped unused resource res/anim/abc_fade_in.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_fade_out.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_in_bottom.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_in_top.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_out_bottom.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_out_top.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/abc_background_cache_hint_selector_material_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/switch_thumb_material_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color-v23/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/abc_item_background_holo_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/abc_list_selector_background_transition_holo_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/abc_list_selector_holo_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-v21/notification_action_background.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/notification_bg.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/notification_bg_low.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/notification_icon_background.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/notification_tile_bg.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/abc_fade_in.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_fade_out.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_in_bottom.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_in_top.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_out_bottom.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_out_top.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/abc_background_cache_hint_selector_material_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/switch_thumb_material_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color-v23/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/abc_item_background_holo_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/abc_list_selector_background_transition_holo_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/abc_list_selector_holo_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-v21/notification_action_background.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/notification_bg.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/notification_bg_low.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/notification_icon_background.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/notification_tile_bg.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png: 207 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 217 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/notification_bg_low_normal.9.png: 215 bytes (replaced with small dummy file of size 77 bytes)
@@ -2278,16 +2291,16 @@ Skipped unused resource res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png:
 Skipped unused resource res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 260 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/splash.png: 57208 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxxhdpi-v4/splash.png: 120852 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/layout/abc_action_bar_up_container.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/abc_activity_chooser_view.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/abc_activity_chooser_view_list_item.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/custom_dialog.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout-v21/notification_action.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout-v21/notification_action_tombstone.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout-v21/notification_template_custom_big.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout-v21/notification_template_icon_group.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/notification_template_part_chronometer.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/notification_template_part_time.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_action_bar_up_container.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/abc_activity_chooser_view.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/abc_activity_chooser_view_list_item.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/custom_dialog.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-v21/notification_action.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-v21/notification_action_tombstone.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-v21/notification_template_custom_big.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-v21/notification_template_icon_group.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/notification_template_part_chronometer.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/notification_template_part_time.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/mipmap-mdpi-v4/ic_launcher.png: 405 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/mipmap-hdpi-v4/ic_launcher.png: 507 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/mipmap-xhdpi-v4/ic_launcher.png: 684 bytes (replaced with small dummy file of size 67 bytes)

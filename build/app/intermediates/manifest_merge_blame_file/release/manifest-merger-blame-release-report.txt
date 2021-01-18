@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.diushaliev.loook"
-4    android:versionCode="4001"
-5    android:versionName="1.0.0" >
+4    android:versionCode="2"
+5    android:versionName="1.0.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -98,23 +98,32 @@
 66            android:value="2" />
 66-->C:\Flutter projects\loook\android\app\src\main\AndroidManifest.xml:47:13-30
 67
-68        <provider
-68-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:9:9-18:20
-69            android:name="androidx.core.content.FileProvider"
-69-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:10:13-62
-70            android:authorities="com.diushaliev.loook.fileprovider"
-70-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:11:13-64
-71            android:exported="false"
-71-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:12:13-37
-72            android:grantUriPermissions="true" >
-72-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:13:13-47
-73            <meta-data
-73-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:15:13-17:53
-74                android:name="android.support.FILE_PROVIDER_PATHS"
-74-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:16:17-67
-75                android:resource="@xml/filepaths" />
-75-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:17:17-50
-76        </provider>
-77    </application>
-78
-79</manifest>
+68        <activity
+68-->[:url_launcher] C:\Flutter projects\loook\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+69            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+69-->[:url_launcher] C:\Flutter projects\loook\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+70            android:exported="false"
+70-->[:url_launcher] C:\Flutter projects\loook\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+71            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+71-->[:url_launcher] C:\Flutter projects\loook\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+72
+73        <provider
+73-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:9:9-18:20
+74            android:name="androidx.core.content.FileProvider"
+74-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:10:13-62
+75            android:authorities="com.diushaliev.loook.fileprovider"
+75-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:11:13-64
+76            android:exported="false"
+76-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:12:13-37
+77            android:grantUriPermissions="true" >
+77-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:13:13-47
+78            <meta-data
+78-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:15:13-17:53
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:16:17-67
+80                android:resource="@xml/filepaths" />
+80-->[:flutter_webview_plugin] C:\Flutter projects\loook\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:17:17-50
+81        </provider>
+82    </application>
+83
+84</manifest>
