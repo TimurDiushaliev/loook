@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "ad6d0606920f0c232364be95abe7682e"
+build_time: [1611146280, 792750000]
+inputs:
+  "/Users/basit/Desktop/ForDelete/loook/ios/Runner/AppDelegate.swift": [1611137692, 679458790]

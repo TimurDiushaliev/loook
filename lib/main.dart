@@ -26,7 +26,6 @@ check(context) async {
 
 _launchURL(url) async {
   if (await canLaunch(url)) {
-    flutterWebViewPlugin.stopLoading();
     await launch(url);
     print('tel url = $url');
   } else {
@@ -98,7 +97,6 @@ class _WebViewPageState extends State<WebViewPage> {
       url: 'https://loook.kg',
       withLocalStorage: true,
       withJavascript: true,
-      withLocalUrl: true,
       initialChild: Scaffold(
         body: Image.asset(
           'images/welcome.png',
